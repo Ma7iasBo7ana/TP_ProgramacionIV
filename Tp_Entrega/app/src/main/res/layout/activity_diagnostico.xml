@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiagnosticoActivity">
+
+    <EditText
+        android:id="@+id/e_d_diagnostico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Diagnostico"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="69dp" />
+
+    <EditText
+        android:id="@+id/e_d_causa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Causa"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/e_d_diagnostico"
+        tools:layout_editor_absoluteX="71dp" />
+
+    <EditText
+        android:id="@+id/e_d_medicamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Medicamento"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/e_d_causa"
+        tools:layout_editor_absoluteX="71dp" />
+
+    <EditText
+        android:id="@+id/e_d_tratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Tratamiento"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/e_d_medicamento"
+        tools:layout_editor_absoluteX="75dp" />
+
+    <EditText
+        android:id="@+id/e_d_reposo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Reposo"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/e_d_tratamiento"
+        tools:layout_editor_absoluteX="73dp" />
+
+    <Spinner
+        android:id="@+id/s_d_spinnermedico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/e_d_reposo" />
+
+    <Button
+        android:id="@+id/b_d_ingresodiagnostico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Ingresar Diagnostico"
+        app:layout_constraintTop_toBottomOf="@+id/s_d_spinnermedico"
+        tools:layout_editor_absoluteX="75dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

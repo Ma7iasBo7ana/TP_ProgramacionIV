@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/e_m_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Ingrese Nombre"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="52dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <Spinner
+        android:id="@+id/e_m_tipospinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e_m_nombre" />
+
+    <EditText
+        android:id="@+id/e_m_raza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingrese Raza"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/e_m_tipospinner"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <EditText
+        android:id="@+id/e_m_edad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingrese Edad"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/e_m_raza"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <EditText
+        android:id="@+id/e_m_causa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Ingrese Causa"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/e_m_edad"
+        tools:layout_editor_absoluteX="49dp" />
+
+    <Button
+        android:id="@+id/e_m_ingresarMascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Ingresar Mascota"
+        app:layout_constraintTop_toBottomOf="@+id/e_m_causa"
+        tools:layout_editor_absoluteX="109dp" />
+
+    <Button
+        android:id="@+id/b_m_diagnostico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diagnostico"
+        app:layout_constraintTop_toBottomOf="@+id/e_m_ingresarMascota"
+        tools:layout_editor_absoluteX="110dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
